@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* MOBIILIVERSIOON*/
+
+/* PÄIS */
+
+.päis {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 5px 0;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 10px;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.päis h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+hr {
+    border: 2px solid grey;
+    width: 300px;
+}
+
+.bänner {
+    background-image: url("img/cooking.jpg");
+    width: 100%;
+    height: calc(100vh - 500px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav ul {
+    margin: 10px auto;
+    width: fit-content;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 16px
+}
+
+nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+.meist {
+    margin: 40px 20px;
+}
+
+.meist h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.meist-tekst-pilt p {
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    line-height: 24px;
+}
+
+.meist-tekst-pilt img {
+    display: none;
+}
+
+.retseptid {
+    margin: 40px 20px;
+}
+
+.retseptid h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.retseptigalerii img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.retseptigalerii {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.galerii-pilt {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+.pildi-pealkiri {
+    visibility: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 15px;
+
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.galerii-pilt:hover .pildi-pealkiri {
+    visibility: visible;
+}
+
+/* JALUS */
+
+footer {
+    width: calc(100% - 20px);
+    background-color: #dbdbdb;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+.kontaktinfo {
+    width: fit-content;
+    float: left;
+    padding-left: 10px;
+    padding-top: 25px;
+}
+
+.kontaktinfo li {
+    display: block;
+    padding: 0 0 5px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+.sotsmeedia {
+    width: 50px;
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.sotsmeedia img {
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/* DESKTOP VERSIOON */
+@media only screen and (min-width: 1130px) {
+    .bänner {
+        margin-bottom: 40px;
+        height: calc(100vh - 400px);
+    }
+
+    hr {
+        display: none;
+    }
+
+    nav ul li {
+        padding: 16px 120px;
+    }
+
+    .meist {
+        margin: 0 100px;
+    }
+
+    .meist-tekst-pilt {
+        display: flex;
+    }
+
+    .meist-tekst-pilt p {
+        width: fit-content;
+        float: left;
+        padding-right: 100px;
+    }
+
+    .meist-tekst-pilt img {
+        display: inline-flex;
+        float: right;
+        width: 350px;
+        text-align: right;
+        padding-left: 20%;
+    }
+
+    .retseptid h2 {
+        display: none;
+    }
+
+    .retseptigalerii {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .galerii-pilt {
+        padding: 0px 50px;
+    }
+
+    .kontaktinfo {
+        padding-left: 30px;
+    }
+
+    .sotsmeedia {
+        padding-right: 30px;
+    }
+
+}
