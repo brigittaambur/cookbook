@@ -36,7 +36,7 @@ hr {
 .bänner {
     background-image: url("img/cooking.jpg");
     width: 100%;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 400px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -174,7 +174,7 @@ footer {
 @media only screen and (min-width: 1130px) {
     .bänner {
         margin-bottom: 40px;
-        height: calc(100vh - 500px);
+        height: calc(100vh - 400px);
     }
 
     hr {
