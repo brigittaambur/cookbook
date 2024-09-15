@@ -36,7 +36,7 @@ hr {
 .bänner {
     background-image: url("img/cooking.jpg");
     width: 100%;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 400px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
